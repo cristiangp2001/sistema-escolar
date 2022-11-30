@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;700&display=swap');
+
+
+body{
+    font-family: 'Readex Pro', sans-serif;
+}
+
+/* Ayuda */
+
+.ayuda{
+    background-color: rgb(209, 209, 209);
+    padding: 20px;
+    width: 400px;
+}
+
+.formulario{
+    padding: 10px;
+}
+
+.formulario input{
+    padding: 5px;
+    display: block;
+    width: 300px;
+    margin-bottom: 20px;
+    
+}
+
+.formulario button{
+    background-color: green;
+    border: none;
+    color: #ffff;
+    padding: 10px;
+    width: 300px;
+}
+
+.excelente{
+    background-color: green;
+    padding: 20px;
+    width: 300px;
+    color: #ffff;
+}
+
+.aprobado{
+    background-color: yellow;
+    padding: 20px;
+    width: 300px;
+    color: black;
+}
+
+.satisfactorio{
+    background-color: rgb(255, 145, 0);
+    padding: 20px;
+    width: 300px;
+    color: rgb(0, 0, 0);
+}
+
+.reprobado{
+    background-color: rgb(255, 0, 0);
+    padding: 20px;
+    width: 300px;
+    color: #ffff;
+}
