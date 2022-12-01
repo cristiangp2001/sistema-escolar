@@ -17,8 +17,12 @@ function calcularPromedio() {
     calificacion = document.getElementById('elemento');
 
 
+    if(prom > 10.1){
+        elemento.classList.add('default-error');
+        elemento.innerHTML = "La calificación no puede ser mayor a 10, verifica los campos nuevamente.";
+    }
     
-    if (prom >= 9 && prom <= 10) {
+    else if (prom >= 9 && prom <= 10) {
         elemento.classList.add('excelente');
         elemento.innerHTML = "Los datos del alumno son " + dNombre + " tu edad es: "+  dEdad + "\n" + "\n\nTu promedio es de " + prom + " y es de excelencia";
     }
