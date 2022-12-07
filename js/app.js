@@ -17,10 +17,10 @@ function calcularPromedio() {
     calificacion = document.getElementById('elemento');
 
 
-     if(prom > 10.1 || prom != prom){
+     if(prom > 10.1 || prom != prom || prom < 0){
       
         elemento.classList.add('default-error');
-        elemento.innerHTML = "La calificación no puede ser mayor a 10, o los campos están vacíos, verifica los campos nuevamente.";
+        elemento.innerHTML = "La calificación no puede ser mayor o menor a 10, o los campos están vacíos, verifica los campos nuevamente.";
     }
     
     else if (prom >= 9 && prom <= 10) {
