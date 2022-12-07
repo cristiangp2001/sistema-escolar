@@ -17,23 +17,28 @@ function calcularPromedio() {
     calificacion = document.getElementById('elemento');
 
 
-    if(prom > 10.1){
+     if(prom > 10.1 || prom != prom){
+      
         elemento.classList.add('default-error');
-        elemento.innerHTML = "La calificación no puede ser mayor a 10, verifica los campos nuevamente.";
+        elemento.innerHTML = "La calificación no puede ser mayor a 10, o los campos están vacíos, verifica los campos nuevamente.";
     }
     
     else if (prom >= 9 && prom <= 10) {
+        
         elemento.classList.add('excelente');
         elemento.innerHTML = "Los datos del alumno son " + dNombre + " tu edad es: "+  dEdad + "\n" + "\n\nTu promedio es de " + prom + " y es de excelencia";
     }
 
     else if (prom >= 8 && prom <= 8.9) {
+     
         elemento.classList.add('aprobado'); 
         elemento.innerHTML = "Los datos del alumno son " + dNombre + " tu edad es: "+ dEdad + "\n" + "\n\nTu promedio es de " + prom + " y es aprobatoria";
     } else if (prom >= 7 && prom <= 7.9) {
+     
         elemento.classList.add('satisfactorio');
         elemento.innerHTML = "Los datos del alumno son " + dNombre + " tu edad es: "+ dEdad + "\n" + "\n\nTu promedio es de " + prom + " es satisfactorio";
     } else {
+     
         elemento.classList.add('reprobado');
         elemento.innerHTML = "Los datos del alumno son " + dNombre + " tu edad es: "+ dEdad + "\n" + "\n\nTu promedio es de " + prom + " es reprobado";
     }
