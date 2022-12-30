@@ -12,6 +12,7 @@ function nuevoAlumno(anombre, dedad, calf1, calf2, calf3, calf4) {
 
   listaAlumno.push(alumno);
 
+
   let promedio = (calf1 + calf2 + calf3 + calf4) / 4;
 
   alumnoListaHTML = `${alumno.nombre} ${alumno.edad} ${alumno.cal1} ${alumno.cal2} ${alumno.cal3} ${alumno.cal4} Tu promedio es de: ${promedio} `;

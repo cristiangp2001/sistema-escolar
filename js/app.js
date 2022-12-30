@@ -12,8 +12,13 @@ function guardarAlumno() {
   dmateria4 = parseFloat(document.getElementById("materia4").value);
   calificacion = document.getElementById('elemento');
 
+
  nuevoAlumno(dNombre, dEdad, dmateria1, dmateria2, dmateria3, dmateria4);
 }
+
+
+localStorage("guardarAlumno", nuevoAlumno);
+
 
 
 function recorrerAlumno(listaAlumno){
